@@ -1,10 +1,9 @@
 # iotop-extension
 An extenstion to the open-source IOTOP tool.
 Basically we fetch more fields out of taskstats when using netlink to talk with Linux kernel.
+It can be help to pinpoint the services responsible for I/O spikes 
 
-## usage
-
-
+## Usage
 
 ## Output fields in IOTOP
 Group 1
@@ -13,7 +12,7 @@ Group 1
 
 Group 2
 1. DISK READ:  The number of bytes which this task has caused to be read from storage.
-2. DISK WRITE: The number of bytes which this task has caused, or shall cause to be written to disk. (the accounting might happen before the actual disk write!)
+2. DISK WRITE: The number of bytes which this task has caused, or shall cause to be written to disk. (the accounting happens before the actual disk write!)
 
 Group 3
 1. SWAPIN
@@ -28,8 +27,10 @@ Group 3
 5. BLKIO CNT:       blkio_cnt field in struct taskstats, denoting # of times waiting for block io
 
 ## A few more words
-Monitoring disk write can be challenging due to "page cache, dirty writeback, kworkerflush....", there's a gap between the vfs layer and block layer,
-it's hard to credit disk write to the specific application processes.
+Monitoring disk write can be challenging due to the gap between the vfs layer and block layer ("page cache, dirty writeback, kworkerflush....")
+It's hard to credit disk write to the specific application processes. 
+In production, we've even observed werid write spikes in system disk when I/O pressure is high in data directories. 
+
 
 ## How to understand BLKIO CNT/DELAY
 <img width="743" alt="image" src="https://github.com/hazelnut-99/iotop-extension/assets/130122455/a13d6da9-79dc-4bfe-a511-7cafb10d2b48">
