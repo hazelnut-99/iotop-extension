@@ -1,5 +1,6 @@
 # iotop-extension
 An extenstion to the open-source IOTOP tool.
+Basically we fetch more fields out of taskstats when using netlink to talk with Linux kernel.
 
 ## usage
 
