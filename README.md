@@ -4,6 +4,9 @@ Basically we fetch more fields out of taskstats when using netlink to talk with 
 It can be help to pinpoint the services responsible for I/O spikes 
 
 ## Usage
+cd into iotop-extension directory
+and then run python run-iotop.py
+there you go!
 
 ## Output fields in IOTOP
 Group 1
