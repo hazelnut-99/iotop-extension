@@ -18,8 +18,8 @@ Group 2
 2. DISK WRITE: The number of bytes which this task has caused, or shall cause to be written to disk. (the accounting happens before the actual disk write!) "accounted in kernel function account_page_dirtied()"
 
 Group 3
-1. SWAPIN
-2. IO
+1. SWAPIN: percent of time waiting for swap ins.
+2. IO: percent of time waiting for block io
 
 
 ## Additional fields available in IOTOP-EXTENSION
