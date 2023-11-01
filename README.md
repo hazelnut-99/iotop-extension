@@ -23,8 +23,8 @@ Group 3
 
 
 ## Additional fields available in IOTOP-EXTENSION
-1. BUFFER READ:     read_char field in struct taskstats, denoting the bytes read on the vfs layer
-2. BUFFER WRITE:    write_char field in struct taskstats, denoting the bytes write on the vfs layer
+1. BUFFER READ:     read_char field in struct taskstats, denoting # of bytes read on the vfs layer
+2. BUFFER WRITE:    write_char field in struct taskstats, denoting # of bytes written on the vfs layer
 3. READ SYSCALLS:   read_syscalls field in struct taskstats, denoting # of read system calls on the vfs layer
 4. WRITE SYSCALLS:  write_syscalls field in struct taskstats, denoting # of write system calls on the vfs layer
 5. BLKIO CNT:       blkio_cnt field in struct taskstats, denoting # of times waiting for block io
