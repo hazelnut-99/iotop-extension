@@ -1,7 +1,7 @@
 # iotop-extension
 An extenstion to the open-source IOTOP tool.
-Basically we fetch more fields out of taskstats when using netlink to talk with Linux kernel.
-It can help to pinpoint the services responsible for I/O spikes 
+Basically we fetch more fields out of taskstats when talking with Linux kernel via netlink.
+It can help to pinpoint the services responsible for I/O spikes.
 
 ## Usage
 1. cd into iotop-extension directory
