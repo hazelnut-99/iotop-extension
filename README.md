@@ -10,8 +10,8 @@ It can help to pinpoint the services responsible for I/O spikes
 
 ## Output fields in IOTOP
 Group 1
-1. Actual DISK READ: retreived fomr /proc/vmstat
-2. Actual DISK WRITE: retreived fomr /proc/vmstat
+1. Actual DISK READ: retrieved fomr /proc/vmstat
+2. Actual DISK WRITE: retrieved fomr /proc/vmstat
 
 Group 2
 1. DISK READ:  The number of bytes which this task has caused to be read from storage.
