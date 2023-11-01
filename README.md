@@ -32,7 +32,7 @@ Group 3
 ## A few more words
 Monitoring disk write can be challenging due to the gap between the vfs layer and block layer ("page cache, dirty writeback, kworkerflush....")
 It's hard to credit disk write to the specific application processes. 
-In production, we've even observed werid write spikes in system disk when I/O pressure is high in data directories. 
+In production, we've even observed weird write spikes in system disk when I/O pressure is high in data directories. 
 
 
 ## How to understand BLKIO CNT/DELAY
