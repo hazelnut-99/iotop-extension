@@ -27,7 +27,7 @@ Group 3
 2. BUFFER WRITE:    write_char field in struct taskstats, denoting # of bytes written on the vfs layer
 3. READ SYSCALLS:   read_syscalls field in struct taskstats, denoting # of read system calls on the vfs layer
 4. WRITE SYSCALLS:  write_syscalls field in struct taskstats, denoting # of write system calls on the vfs layer
-5. BLKIO CNT:       blkio_cnt field in struct taskstats, denoting # of times waiting for block io
+5. BLKIO CNT:       blkio_cnt field in struct taskstats, denoting # of times waiting for block io (in_iowait)
 
 ## A few more words
 Monitoring disk write can be challenging due to the gap between the vfs layer and block layer ("page cache, dirty writeback, kworkerflush....")
