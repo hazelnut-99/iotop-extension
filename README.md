@@ -14,8 +14,8 @@ Group 1
 2. Actual DISK WRITE: retrieved fomr /proc/vmstat
 
 Group 2
-1. DISK READ:  The number of bytes which this task has caused to be read from storage.
-2. DISK WRITE: The number of bytes which this task has caused, or shall cause to be written to disk. (the accounting happens before the actual disk write!)
+1. DISK READ:  The number of bytes which this task has caused to be read from storage. "this happens in kernel function submit_bio()"
+2. DISK WRITE: The number of bytes which this task has caused, or shall cause to be written to disk. (the accounting happens before the actual disk write!) "this happens in kernel function account_page_dirtied()"
 
 Group 3
 1. SWAPIN
