@@ -46,7 +46,7 @@ In production, we've even observed weird write spikes in system disk when I/O pr
 <img width="1020" alt="image" src="https://github.com/hazelnut-99/iotop-extension/assets/130122455/35951285-bf0c-4587-8318-5e42efab6906">
 
 
-## Referencing: 
+## References: 
 - iotop: http://guichaz.free.fr/iotop/
 - Linux kernel struct taskstats documentation: https://docs.kernel.org/accounting/taskstats-struct.html
 - Linux kernel netlink: https://docs.kernel.org/userspace-api/netlink/intro.html
